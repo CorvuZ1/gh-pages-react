@@ -16,7 +16,7 @@ function App() {
   const [counter, setCounter] = useState(5);
   const keyFilter = apiVariant === rickAndMortyApi ? "type" : "country";
 
-  function filterByKey(key) {
+  const filterByKey = key => {
     const result = data.reduce((acc, curr) => {
       Object.entries(curr).forEach(item => {
         if (item[0] === key) {
