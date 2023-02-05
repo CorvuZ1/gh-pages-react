@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  margin: 25px 0 0 0;
+  font-family: Arial, sans-serif;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.mr {
+  margin-right: 10px;
+}
+
+.mt {
+  margin-top: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.root {
+  margin: 5px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.row {
+  display: grid;
+  min-width: 600px;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); // если вдруг колонок будет не 7
+  padding: 5px;
+
+  &:nth-child(odd) {
+    background-color: lightgray;
+  }
+
+  &:first-child {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+
+.item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
