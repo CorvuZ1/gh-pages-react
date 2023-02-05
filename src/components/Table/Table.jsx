@@ -16,10 +16,10 @@ function Table({ data }) {
 
       rowsContent.push(Object.values(row));
     }
-    return [headers, rowsContent];
+    return { headers, rowsContent };
   };
 
-  const [headers, rowsContent] = formatData();
+  const { headers, rowsContent } = formatData();
 
   return (
     <div className={classes.root}>
